@@ -1,23 +1,15 @@
-import Link from 'next/link';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
-export default function Navigation() {
-  return (
-    <nav>
-      <ul>
-        <li>
-          {/* Replace the href with your Google Drive CV link */}
-          <Link href="https://drive.google.com/file/d/1ZeEP0oP7Fm_ZcE4wYwf8H4AX8fIxlBlv/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-            CV
-          </Link>
-        </li>
-        {/* Other navigation links */}
-        <li>
-          <Link href="/about">About</Link>
-        </li>
-        <li>
-          <Link href="/contact">Contact</Link>
-        </li>
-      </ul>
-    </nav>
-  );
+export default function CV() {
+  const router = useRouter();
+
+  useEffect(() => {
+    // Replace with your Google Drive CV link
+    const googleDriveLink = 'https://drive.google.com/your-cv-link';
+    // Redirect to the Google Drive link
+    window.location.href = googleDriveLink;
+  }, [router]);
+
+  return null; // No content will be rendered on this page
 }
