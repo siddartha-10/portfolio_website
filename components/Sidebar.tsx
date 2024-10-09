@@ -18,7 +18,7 @@ export function Sidebar() {
         <SidebarLink href="/publications" icon={<BookOpen className="mr-2 h-4 w-4" />}>Publications</SidebarLink>
         <SidebarLink href="/talks" icon={<PenTool className="mr-2 h-4 w-4" />}>Talks</SidebarLink>
         <SidebarLink href="/teaching" icon={<Newspaper className="mr-2 h-4 w-4" />}>Teaching</SidebarLink>
-        <SidebarLink href="https://drive.google.com/your-cv-link" icon={<FileText className="mr-2 h-4 w-4" />} external>CV</SidebarLink>
+        <SidebarLink href="https://drive.google.com/file/d/1ZeEP0oP7Fm_ZcE4wYwf8H4AX8fIxlBlv/view?usp=sharing" icon={<FileText className="mr-2 h-4 w-4" />} external>CV</SidebarLink>
         <SidebarLink href="/interests" icon={<Heart className="mr-2 h-4 w-4" />}>Interests</SidebarLink>
       </nav>
       <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
